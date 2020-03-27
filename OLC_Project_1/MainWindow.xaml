@@ -1,0 +1,50 @@
+﻿<Window x:Class="OLC_Project_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OLC_Project_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1336.419" Width="1878.37"  WindowState="Maximized">
+    <Grid>
+        <TabControl x:Name="tabControl"  BorderThickness="0" HorizontalAlignment="Left" Height="600" Margin="31,125,0,0" VerticalAlignment="Top" Width="1000">
+        </TabControl>
+        <!-- Open -->
+        <Button HorizontalAlignment="Left" Margin="30,38,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="btnOpenFile_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="resources/folder.png" Stretch="Uniform"></Image>
+                <TextBlock Text="PDF" FontSize="25" />
+            </StackPanel>
+        </Button>
+
+        <!-- Save -->
+        <Button  HorizontalAlignment="Left" Margin="180,38,0,0" VerticalAlignment="Top" Width="75" Height="75">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="resources/save.png" Stretch="Uniform"/>
+                <TextBlock Text="PDF" FontSize="25" RenderTransformOrigin="1.455,0.606" />
+            </StackPanel>
+        </Button>
+
+
+
+        <!-- PDF -->
+        <Button HorizontalAlignment="Left" Margin="330,38,0,0" VerticalAlignment="Top" Width="75" Height="75">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="resources/pdf.png" Stretch="Uniform"></Image>
+                <TextBlock Text="PDF" FontSize="25" />
+            </StackPanel>
+        </Button>
+
+        <!-- Settings -->
+        <Button HorizontalAlignment="Left" Margin="480,37,0,0" VerticalAlignment="Top" Width="75" Height="75">
+
+            <StackPanel Orientation="Horizontal">
+                <Image Source="resources/gear.png" Stretch="Uniform"></Image>
+                <TextBlock Text="PDF" FontSize="25" />
+            </StackPanel>
+        </Button>
+
+        <Button Content="TEST" HorizontalAlignment="Left" Margin="771,52,0,0" VerticalAlignment="Top" Width="75" Click="onClickTest"/>
+
+    </Grid>
+</Window>
